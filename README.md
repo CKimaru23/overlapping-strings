@@ -28,3 +28,36 @@ Contributions are welcome! If you would like to contribute to this project, plea
 ### License
 This project is licensed under the MIT License - see the LICENSE file for details.
 
+
+## CamelCase Function
+The camelcase function is a simple Ruby function that converts a given string to CamelCase format. In CamelCase format, all words are concatenated together without any spaces, and the first letter of each word (except the first one) is capitalized.
+
+### Usage
+To use the camelcase function, you can define it as follows:
+
+```ruby
+def camelcase(string)
+  string.split.map(&:capitalize).join
+end
+```
+
+This code defines the camelcase function, which takes a single argument string. The function then splits the input string into an array of words using the `.split` method. It then uses the `.map` method to apply the .capitalize method to each word in the array, which capitalizes the first letter of each word. Finally, it joins the transformed words back together into a single string using the `.join` method.
+
+Here's an example of how to use the camelcase function:
+
+```ruby
+puts camelcase('hello case') #=> HelloCase
+puts camelcase('camel case word') #=> CamelCaseWord
+```
+
+The first line of code calls camelcase on the string "`hello case`", which returns "`HelloCase`". The second line of code calls camelcase on the string "`camel case word`", which returns "`CamelCaseWord`".
+
+### Limitations
+Note that the camelcase function assumes that the input string only contains alphanumeric characters and spaces. If the input string contains other characters (such as punctuation), the function may not work as expected.
+
+### License
+This code is released under the MIT License. Feel free to use it in your own projects!
+
+
+
+
